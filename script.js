@@ -7,3 +7,7 @@ function scrollToImoveis() {
 function whatsapp() {
   window.open("https://wa.me/5599999999999", "_blank");
 }
+
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
