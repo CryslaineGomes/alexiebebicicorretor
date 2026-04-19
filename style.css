@@ -1,1 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F2F2F2;
+}
 
+/* HEADER */
+header {
+  background: #0F4C81;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* BANNER */
+.banner {
+  background: #164CBB;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.banner button {
+  background: white;
+  color: #164CBB;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* BUSCA */
+.busca {
+  text-align: center;
+  padding: 20px;
+}
+
+.busca input, .busca select {
+  padding: 10px;
+  margin: 5px;
+}
+
+.busca button {
+  background: #164CBB;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+/* IMÓVEIS */
+.imoveis {
+  text-align: center;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card button {
+  background: #0F4C81;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+/* SOBRE */
+.sobre {
+  background: #E0E0E0;
+  padding: 40px;
+  text-align: center;
+}
+
+/* CONTATO */
+.contato {
+  text-align: center;
+  padding: 40px;
+}
+
+.contato button {
+  background: #164CBB;
+  color: white;
+  padding: 15px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background: #0F4C81;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
