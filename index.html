@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Corretor de Imóveis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <h1>Seu Imóvel</h1>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Imóveis</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
+<section class="banner">
+  <h2>Encontre o imóvel dos seus sonhos</h2>
+  <button onclick="scrollToImoveis()">Ver Imóveis</button>
+</section>
+
+<section class="busca">
+  <input type="text" placeholder="Cidade">
+  <select>
+    <option>Tipo</option>
+    <option>Casa</option>
+    <option>Apartamento</option>
+  </select>
+  <button>Buscar</button>
+</section>
+
+<section id="imoveis" class="imoveis">
+  <h2>Imóveis em destaque</h2>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200">
+    <h3>Casa moderna</h3>
+    <p>R$ 450.000</p>
+    <button>Ver detalhes</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200">
+    <h3>Apartamento luxo</h3>
+    <p>R$ 700.000</p>
+    <button>Ver detalhes</button>
+  </div>
+
+</section>
+
+<section class="sobre">
+  <h2>Sobre o corretor</h2>
+  <p>Atendimento personalizado para encontrar o imóvel ideal para você.</p>
+</section>
+
+<section class="contato">
+  <h2>Contato</h2>
+  <button onclick="whatsapp()">Falar no WhatsApp</button>
+</section>
+
+<footer>
+  <p>© 2026 - Corretor de Imóveis</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
