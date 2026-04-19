@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Corretor de Imóveis</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -9,11 +10,14 @@
 
 <header>
   <h1>Seu Imóvel</h1>
-  <nav>
+
+  <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+
+  <nav id="menu">
     <a href="#">Início</a>
-    <a href="#">Imóveis</a>
-    <a href="#">Sobre</a>
-    <a href="#">Contato</a>
+    <a href="#imoveis">Imóveis</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
   </nav>
 </header>
 
@@ -51,12 +55,12 @@
 
 </section>
 
-<section class="sobre">
+<section id="sobre" class="sobre">
   <h2>Sobre o corretor</h2>
   <p>Atendimento personalizado para encontrar o imóvel ideal para você.</p>
 </section>
 
-<section class="contato">
+<section id="contato" class="contato">
   <h2>Contato</h2>
   <button onclick="whatsapp()">Falar no WhatsApp</button>
 </section>
