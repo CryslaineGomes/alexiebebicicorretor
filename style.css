@@ -1,4 +1,4 @@
-8body {
+body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #F2F2F2;
@@ -10,13 +10,22 @@ header {
   color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+}
+
+/* MENU MOBILE */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* BANNER */
@@ -55,16 +64,19 @@ nav a {
 
 /* IMÓVEIS */
 .imoveis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   padding: 40px;
 }
 
 .card {
   background: white;
-  display: inline-block;
   margin: 10px;
   padding: 15px;
-  width: 250px;
+  width: 300px;
+  max-width: 90%;
   border-radius: 8px;
 }
 
@@ -107,46 +119,11 @@ footer {
   text-align: center;
   padding: 10px;
 }
-/* ===== RESPONSIVIDADE ===== */
 
-/* MENU MOBILE */
-header {
-  flex-wrap: wrap;
-}
+/* ===== RESPONSIVO ===== */
 
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* GRID FLEXÍVEL */
-.imoveis {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* CARDS */
-.card {
-  width: 300px;
-  max-width: 90%;
-}
-
-/* INPUTS RESPONSIVOS */
-.busca input,
-.busca select {
-  width: 200px;
-  max-width: 90%;
-}
-
-/* ===== TABLET ===== */
+/* TABLET */
 @media (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
 
   nav {
     display: none;
@@ -155,9 +132,12 @@ header {
     text-align: center;
   }
 
+  nav.active {
+    display: flex;
+  }
+
   nav a {
     padding: 10px;
-    display: block;
     border-top: 1px solid rgba(255,255,255,0.2);
   }
 
@@ -165,12 +145,9 @@ header {
     display: block;
   }
 
-  nav.active {
-    display: flex;
-  }
-
-  .banner {
-    padding: 50px 20px;
+  header {
+    flex-direction: column;
+    align-items: center;
   }
 
   .busca {
@@ -184,22 +161,20 @@ header {
   .busca button {
     width: 90%;
   }
-
 }
 
-/* ===== CELULAR ===== */
+/* CELULAR */
 @media (max-width: 480px) {
 
   .banner h2 {
     font-size: 20px;
   }
 
-  .card {
-    width: 90%;
-  }
-
   h1 {
     font-size: 20px;
   }
 
+  .card {
+    width: 90%;
+  }
 }
