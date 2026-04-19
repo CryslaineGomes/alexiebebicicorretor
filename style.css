@@ -1,4 +1,4 @@
-body {
+8body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #F2F2F2;
@@ -106,4 +106,100 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+}
+/* ===== RESPONSIVIDADE ===== */
+
+/* MENU MOBILE */
+header {
+  flex-wrap: wrap;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* GRID FLEXÍVEL */
+.imoveis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* CARDS */
+.card {
+  width: 300px;
+  max-width: 90%;
+}
+
+/* INPUTS RESPONSIVOS */
+.busca input,
+.busca select {
+  width: 200px;
+  max-width: 90%;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 10px;
+    display: block;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .banner {
+    padding: 50px 20px;
+  }
+
+  .busca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .busca input,
+  .busca select,
+  .busca button {
+    width: 90%;
+  }
+
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 480px) {
+
+  .banner h2 {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
 }
